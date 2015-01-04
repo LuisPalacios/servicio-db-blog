@@ -1,6 +1,6 @@
 # Introducción
 
-Este repositorio contiene un ejemplo del fichero de configuración [fig](http://www.fig.sh/index.html) para instanciar MySQL (servicio de Base de Datos). Está basado en el contenedor Docker [luispa/base-mysql](https://registry.hub.docker.com/u/luispa/base-mysql/) (GitHub [base-mysql](https://github.com/LuisPalacios/base-mysql)). 
+Este repositorio contiene un ejemplo del fichero de configuración [fig](http://www.fig.sh/index.html) para instanciar MySQL (servicio de Base de Datos). Está basado en el contenedor Docker [luispa/base-mysql](https://registry.hub.docker.com/u/luispa/base-mysql/) (GitHub [base-mysql](https://github.com/LuisPalacios/base-mysql)). Mi contenedor está basado en el oficial [aquí](https://registry.hub.docker.com/_/mysql/) y [aquí](https://github.com/docker-library/mysql).
 
 Un ejemplo de uso, montar otro contenedor con WordPress ([luispa/base-wordpress](https://registry.hub.docker.com/u/luispa/base-wordpress/)) y tener independiente la base de datos del servidor web. 
 
