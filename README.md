@@ -11,7 +11,7 @@ Consulta este [apunte técnico sobre varios servicios en contenedores Docker](ht
 
 Para automatizar con el programa [fig](http://www.fig.sh/index.html) y que arranquen el contenedor descarga y renombra el fichero fig-template.yml, modifica las variables y ejecuta el programa: 
 
-    $ git clone https://github.com/LuisPalacios/servicio-log.git
+    $ git clone https://github.com/LuisPalacios/servicio-db-log.git
     :
     $ mv fig-template.yml fig.yml   (edita a tu gusto)
     :
