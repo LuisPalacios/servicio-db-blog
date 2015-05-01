@@ -12,6 +12,10 @@
 #   En este ejemplo escucho por el puerto 33001 y lo empleo para servir 
 #   la base de datos de un servicio externo de Blog (con WordPress)
 #
+#   Troubleshooting: 
+#  
+#   docker run --rm -t -i -p 33001:3306 -e MYSQL_ROOT_PASSWORD="rootdocker" -v /Apps/data/blog/db/mysql:/var/lib/mysql -v /Apps/data/tz:/config/tz luispa/base-mysql /bin/bash
+#
 mysql:
   
   image: luispa/base-mysql
@@ -22,8 +26,8 @@ mysql:
   # Directorio de datos de MySQL: /var/lib/mysql
   volumes:
     - "/Apps/data/blog/db/mysql:/var/lib/mysql"  
-    - "/etc/localtime:/etc/localtime:ro"
-
+    - "/Apps/data/tz:/config/tz"
+  
   # Puerto externo
   ports:
     - "33001:3306"
